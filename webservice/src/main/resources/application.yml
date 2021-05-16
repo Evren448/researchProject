@@ -1,0 +1,45 @@
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    password: toprakproje
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: toprakverimliligi@gmail.com
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 12345
+    url: jdbc:mysql://localhost:3306/game?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+     javax:
+      persistence:
+        validation:
+          mode: none
+      hibernate:   
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    
+      
+#spring:
+#  datasource:
+#    url: jdbc:h2:./devdb
+#    username: sa
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#spring:
+#  jpa:
+#    properties:
+#      javax:  
+#        persistence:
+#          validation:
+#            mode: none
